@@ -40,3 +40,11 @@ O projeto teve como objetivo entregar uma plataforma funcional, aplicando de for
   style= "padding-right: 50px;"
   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain-wordmark.svg"
 />
+<img
+  align="left"
+  alt="JS"
+  title="JS"
+  width= "50px"
+  style= "padding-right: 50px;"
+  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+/>
