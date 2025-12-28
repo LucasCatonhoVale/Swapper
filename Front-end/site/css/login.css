@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#hearder{
+    height: 100px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hearder img{
+    width: 300px;
+    margin-top: -65px;
+    margin-left: -200px;
+}
+#hearder h1{
+    margin-left: -px;
+    font-size: 50px;
+    border: 1px solid transparent;
+    margin-top: -125px;
+    text-decoration: none;
+    
+}
+#hearder a{
+    text-decoration: none;
+    color: black;
+}
+.ajuda{
+    font-size: 20px;
+    margin-top:5px;
+    margin-left: 900px;
+}
+#hearder a:hover{
+    text-decoration:underline;
+}
+
+
+#login{
+    background-color: #ffde59;
+    border: 1px solid transparent;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+form{
+    background: #fff;
+    opacity: 75%;
+    width: 500px;
+    border: 1px solid transparent;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+
+}
+form h1{
+    color: #ffbd59;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+}
+.forms{
+    margin-top: 50px;
+}
+label{
+    color: #ffbd59;
+    font-size: 35px;
+    margin-left: 15px;
+}
+input{
+    border: 1px solid black;
+    box-shadow: 0px 10px 11px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    height: 50px;
+    margin-left: 50px;
+    width: 400px;
+}
+#email{
+    margin-left: 50px;
+}
+#for{
+    width: 250px;
+   height: 50px;
+   border-radius: 50px;
+   margin-left:120px;
+   margin-top: 25px;
+   background: #ffbd59;
+   color: black;
+   font-size: 25px;
+   box-shadow: 0 25px 18px rgba(185, 4, 4, 0.06);
+}
+h3{
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.senha-container {
+    position: relative;
+    margin-top: 25px; /* espaço entre campos */
+}
+
+/* Wrapper para alinhar input + ícone */
+.input-wrapper {
+    position: relative;
+}
+
+/* Input de senha ajustado para o ícone */
+.input-wrapper input {
+    padding-right: 50px; /* espaço para o ícone à direita */
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 0px 10px 11px rgba(0, 0, 0, 0.3);
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+/* Ícone de mostrar/ocultar dentro do input */
+.icone-senha {
+    position: absolute;
+    top: 50%; /* centraliza verticalmente */
+    right: 65px; /* distância do lado direito do input */
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px; /* tamanho do ícone */
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    user-select: none; /* evita seleção do ícone */
+}
+
+.icone-senha img{
+    width: 50px;
+}
+.icone-senha:hover {
+    opacity: 1;
+}
+#customAlertContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.custom-alert {
+    background-color: #ffde59; /* amarelo */
+    color: #000;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.custom-alert.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media screen and (max-width: 980px) {
+    /*Menu*/
+    #hearder img{
+        width: 200px;
+        margin-top: -40px;
+        margin-left: -100px;
+    }
+    #hearder h1{
+        margin-left: 25PX;
+        font-size: 30px;
+        margin-top: -80px; 
+    }
+    .ajuda{
+        font-size: 15px;
+        margin-top:5px;
+        margin-left: 300px;
+    }
+    /*login*/
+    #login{
+        height: 900px;
+        width: 600px;
+        margin-left: 19px;
+        border-radius: 25px;
+    
+    }
+    .logo{
+        border: 1px solid transparent;
+        width: 400px;
+        margin-top: -600px;
+        margin-left: 50px;
+        justify-content: center;
+
+    }
+    form{
+        border: 1px solid black;
+        margin-top: 250px;
+        margin-left:  -450px;
+
+    }
+
+}
+
+@media screen and (max-width:500px) {
+       
+  #hearder img{
+        width: 150px;
+        margin-top: -40px;
+        margin-left: -60px;
+    }
+    #hearder h1{
+        margin-left: 35PX;
+        font-size: 18px;
+        margin-top: -60px; 
+    }
+    .ajuda{
+        font-size: 12px;
+        margin-top:5px;
+        margin-left: 250px;
+    }
+        /*cadastrar*/
+        #login{
+            height:700px;
+            width: 460px;
+            margin-left: 13px;
+            border-radius: 25px;
+        
+        }
+        .logo{
+            border: 1px solid transparent;
+            width: 300px;
+            margin-top: -450px;
+            margin-left: 60px;
+            justify-content: center;
+
+        }
+        form{
+            border: 1px solid black;
+            margin-top: 170px;
+            width: 400px;
+            height: 400px;
+            margin-left:  -360px;
+
+        }
+        .forms input::placeholder, .senha-container input::placeholder {
+            font-size: 12px;
+            padding-left: 15px;
+        }
+
+        input, .senha-container input{
+            width: 300px;
+            height: 35px;
+        }
+        .icone-senha img{
+            width: 40px;
+        }
+        label{
+            font-size: 15px;
+        }
+        #for{
+            width: 150px;
+            margin-left:130px;
+        }
+        form h2{
+            font-size: 13px;
+        }
+        form h1{
+            font-size: 35px;
+        }
+        h3{
+            text-align: center;
+        }
+}

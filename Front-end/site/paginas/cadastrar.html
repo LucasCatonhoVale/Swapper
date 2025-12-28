@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/cadastrar.css">
+    <title>Swapper</title>
+</head>
+<body style="background: #fff;">
+    <main>
+        <section id="hearder">
+            <a href="./index.html">
+                 <img src="../img/logo.png" alt="imagem escrita"> <h1>|Cadastrar</h1>            </a>
+           
+            <a href="#"  class="ajuda" onclick="enviarMensagem()">Precisa de Ajuda?</a>
+        </section>
+        <section id="cadastrar">
+                <img class="logo" src="../img/LogoEscrito.png" alt="">
+                <form action="">
+                        <h1>Cadastre-se </h1>
+                        <h2>Se cadastre no Swappy e aproveite tudo que temos a oferecer</h2>
+                        <div class="forms">
+                            <label for="nome">Nome</label>
+                            <br>
+                            <input type="text" class="nome" placeholder="Seu nome completo" required autocomplete="name">
+                        </div>
+                        <br>
+                        <div class="forms">
+                            <label for="email">E-mail</label>
+                            <br>
+                            <input type="email" class="email" placeholder="Seu@email.com" required autocomplete="username">
+                        </div>
+                        <br>
+                        <div class="forms">
+                            <label for="cpf">CPF (apenas números)</label>
+                            <br>
+                            <input class="cpf" name="cpf" inputmode="numeric" autocomplete="off" maxlength="14" placeholder="000.000.000-00" aria-describedby="help" />
+                        </div>
+                        <br>
+                        <div class="forms">
+                            <label for="telefone">Telefone</label>
+                            <br>
+                             <input type="text" class="telefone" placeholder="(00)00000-0000" required autocomplete="tel">
+                        </div>
+                        <br>
+                        <div class=" senha-container">
+                            <label for="senha">Senha</label>
+                            <div class="input-wrapper">
+                                <input type="password" class="senha" placeholder="Sua senha" required autocomplete="current-password">
+                                <span id="toggleSenha" class="icone-senha"><img src="../img/ver.png"></span>
+                            </div>
+                        </div>                
+                        <br>
+                        <button id="for" type="submit" > Cadastrar</button>
+                        <h3>Já tem conta?  <a href="./login.html" style="color: #ffbd59;">Login</a></h3>
+                </form>
+                 <div class="cad-completo" id="cadastroCompleto"></div>
+
+            
+        </section>
+    </main>
+    <br><br><br>
+    <script src="../js/conecao.js" defer></script>
+    <div id="customAlertContainer"></div>
+</body>
+</html>

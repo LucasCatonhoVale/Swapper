@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Produto</title>
+  <link rel="stylesheet" href="../css/detalhes.css">
+  <link rel="stylesheet" href="../css/carrinho.css">
+  <link rel="stylesheet" href="../css/menuDatlhe.css">
+</head>
+<body>
+
+  <section id="faixa">
+    <div id="faixas">
+      <p>EIII, NADA É DESPERDIÇADO!!!</p>
+    </div>
+  </section>
+  <header>
+        <div id="logo">
+            <img src="../img/LogoEscrito.png" alt="logo_pricipal">
+        </div>
+        <div id="menu">
+                 <div id="MenuCarrinho">
+                    <img src="../img/carrinho.png" alt="carrinho">
+                </div>
+                <div id="cartBox" class="hidden">
+                    <div id="cartItems"></div>
+                        <div class="cartFooter">
+                            <div>Total: R$ <span id="cartTotal">0.00</span></div>
+                                <div class="checkout">
+                                    <button id="clearBtn">Limpar</button>
+                                    <button id="checkoutBtn">Finalizar</button>
+                                </div>
+                        </div>
+                </div>
+            <nav>
+                <div class="menumobile">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="navlist">
+                    <li><a href="index.html">Categorias</a></li>
+                    <li><a href="#" onclick="enviarMensagem()">Suporte</a></li>
+                    <li><a href="./login.html" id="loginLink">| Entrar</a></li>
+                    <li class="diferentes"><a href="./cadastrar.html" id="cadastroLink" class="diferente">Cadastrar</a></li>
+                </ul>
+            </nav>
+        </div>
+  </header>
+
+  <main>
+    <div id="productDetails"></div>
+  </main>
+  <footer>
+    <div class="site">
+      <h2>Sobre Nós</h2>
+         <p class="Sobre">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nulla quod ex perspiciatis recusandae tenetur eius odit quo optio sapiente facere sunt, voluptatem minus ratione eligendi. Natus quos fuga dolorem?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id earum, nobis libero debitis fuga tempore qui omnis suscipit ut dignissimos nesciunt aut nemo itaque iste, dolorum ratione, ullam optio!
+            </p>
+      <img src="../img/LogoEscrito.png" alt="logo">
+      <p class="Direitos">&copy; Todos os Direitos Reservados</p>
+    </div>
+  </footer>
+  <script src="../js/carinho.js" ></script>
+  <script src="../js/detalhe.js" defer></script>
+  <script src="../js/menu.js"></script> 
+  <script src="../js/script.js"></script>
+  <div id="customAlertContainer"></div>
+</body>
+</html>

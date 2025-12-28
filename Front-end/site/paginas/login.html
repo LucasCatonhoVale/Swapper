@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/login.css">
+  <title>Swapper | Login</title>
+</head>
+<body style="background: #fff;">
+  <main>
+    <!-- Cabeçalho -->
+    <section id="hearder">
+      <a href="./index.html" class="logo-link">
+        <img src="../img/logo.png" alt="Logo Swapper">
+        <h1>|Entrar</h1>
+      </a>
+      <a href="#" class="ajuda" onclick="enviarMensagem()">Precisa de Ajuda?</a>
+    </section>
+
+    <!-- Formulário de Login -->
+    <section id="login">
+      <img class="logo" src="../img/LogoEscrito.png" alt="Logo Swapper escrita">
+
+      <form id="form-login">
+        <h1>Login</h1>
+
+        <div class="forms">
+          <label for="email">E-mail</label>
+          <input type="email" class="email" placeholder="seu@email.com" required autocomplete="username">
+        </div>
+
+        <div class="forms senha-container">
+            <label for="senha">Senha</label>
+            <div class="input-wrapper">
+              <input type="password" class="senha" placeholder="Sua senha" required autocomplete="current-password">
+                <span id="toggleSenha" class="icone-senha"><img src="../img/ver.png"></span>
+            </div>
+        </div>  
+
+        <button id="for" type="submit" >Entrar</button>
+        <h3>Não tem cadastro?<a href="./cadastrar.html" style="color: #ffbd59;">Cadastrar</a></h3>
+      </form>
+    </section>
+  </main>
+
+  <br><br><br>
+  <script src="../js/login.js"></script>
+  <div id="customAlertContainer"></div>
+
+</body>
+</html>

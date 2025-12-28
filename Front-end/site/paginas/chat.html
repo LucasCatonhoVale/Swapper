@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <title>Swappy | troca</title>
+    
+</head>
+<body>
+ <section id="hearder">
+            <a href="./detalhe.html">
+                 <img src="../img/logo.png" alt="imagem escrita"> <h1>|Voltar</h1>            </a>
+           
+            <a href="#"  class="ajuda" onclick="enviarMensagem()">Precisa de Ajuda?</a>
+ </section>
+
+ <section class="chat">
+    <div class="chat-container">
+
+        <!-- Cabeçalho -->
+        <div class="chat-header">
+            <img id="prop-foto" class="prop-foto" src="" alt="">
+            <div>
+                <h2 id="prop-nome">Proprietário</h2>
+                <p id="produto-nome">Carregando produto...</p>
+            </div>
+        </div>
+
+        <!-- Área onde as mensagens aparecem -->
+        <div class="chat-body" id="chat-body"></div>
+
+        <!-- Área de digitação -->
+        <div class="chat-footer">
+            <input type="text" id="msgInput" placeholder="Digite uma mensagem...">
+            <button id="btnEnviar">Enviar</button>
+        </div>
+
+    </div>
+ </section>
+<script src="../js/chat.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

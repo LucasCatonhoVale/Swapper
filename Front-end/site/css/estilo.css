@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* Faixa no início */
+#faixa{
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: #ffde59;
+    opacity: 0.5;
+    height: 50px;
+
+}
+
+#faixas{
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+}
+
+#faixas p{
+    color:black;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Header / menu */
+header {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+/* Logo do site */
+#logo img{
+    width: 150px;
+}
+
+/* Barra de pesquisa */
+.barra {
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 150px;
+    margin-top: -70px;
+}
+
+#searchInput {
+    flex: 1; 
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.barra button {
+    width: 40px;
+    height: 40px;
+    background-color: #ffde59;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.barra button:hover {
+    transform: scale(1.05);
+}
+
+.barra img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Footer */
+footer{
+    background: #ffde59;
+    height: 250px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.site{
+    width: 1000px;
+    height: 250px;
+    border: 1px solid transparent;
+}
+
+.site img{
+    margin-left: 550px;
+    margin-top: -180px;
+    width: 350px;
+    height: 200px;
+    border: 1px solid transparent;
+}
+
+.site h2{
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.Sobre{
+    width: 500px;
+    height: 150px;
+    margin-left: 25px;
+    border: 1px solid transparent;
+    text-align: justify;
+}
+
+.Direitos{
+    text-align: center;
+}
+#customAlertContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.custom-alert {
+    background-color: #ffde59; /* amarelo */
+    color: #000;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.custom-alert.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@media screen and (max-width: 980px){
+
+    /*logo*/
+    #logo img{
+         width: 150px;
+    }
+
+    /*Barra de Pesquisa*/
+    .barra {
+        width: 300px;
+    }
+    
+    .barra button {
+        height: 40px;
+    }
+    /*faixa*/
+    #faixa p{
+        margin-left: -350px;
+    }
+    
+    /*footer*/
+    .site{
+        width: 100%;    
+    }
+
+    .site img{
+        margin-left: 350px;
+        width: 300px;
+    }
+
+
+    .Sobre{
+        width: 355px;
+
+    }
+}
+@media screen and (max-width: 503px){
+    /*logo*/
+    #logo img{
+         width: 110px;
+    }
+     /*Barra de Pesquisa*/
+    .barra {
+        width: 200px;
+        height: 35px;
+        margin-left: 110px;
+        margin-top: -55px;
+    }
+
+    #searchInput {
+        height: 35px;
+        padding-left: 5px;
+        font-size: 12px;
+    }
+
+    .barra button {
+        width: 25px;
+        height: 25px;
+    }
+    .barra img{
+        width: 15px;
+        height: 15px;
+    }
+
+    /*faixa*/
+    #faixa p{
+        margin-left: -500px;
+    }
+    
+    /*footer*/
+.site{
+    width: 100%; 
+    height: 300px;
+    overflow: hidden;
+    background-color: #ffde59;
+}
+
+.site img{
+    float: left; 
+    margin-left: 150px;
+    margin-top: -310px;
+    width: 200px;
+    height: 150px;
+    display: block;
+}
+
+.site h2{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Sobre{
+    width: 355px;
+    margin-left: 70px;
+    font-size: 13px;
+}
+
+.Direitos{
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+}

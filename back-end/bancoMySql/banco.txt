@@ -1,0 +1,90 @@
+create database Swapper;
+ use Swapper;
+
+
+create table usuario(
+	id_usuario		 integer auto_increment not null primary key,
+    nome     varchar(200) not null,
+    email    varchar(200) not null,
+    cpf      varchar(25)  not null,
+    telefone varchar(200) not null,
+    senha    text		  not null
+);
+
+
+create table Produtos(
+	id_prod  integer auto_increment not null primary key,
+    nome	 		varchar(255)  not null,
+    descri   		varchar(1000) not null,
+    imagem     		mediumtext    not null,
+    categoria		varchar(25)   not null,
+    preco			decimal(10,2) not null
+    );
+INSERT INTO Produtos (nome, descri, imagem, categoria, preco) VALUES
+('Camiseta Básica', 'Camiseta básica em bom estado.', '../img/LogoEscrito.png', 'roupas', 25.00),
+('Jeans Skinny', 'Calça jeans skinny em ótimo estado.', '../img/LogoEscrito.png', 'roupas', 45.00),
+('Vestido Floral', 'Vestido floral usado, bom estado.', '../img/LogoEscrito.png', 'roupas', 50.00),
+('Blusa de Frio', 'Blusa de frio nova.', '../img/LogoEscrito.png', 'roupas', 60.00),
+('Shorts Jeans', 'Shorts jeans em bom estado.', '../img/LogoEscrito.png', 'roupas', 30.00),
+('Camisa Social', 'Camisa social usada, ótimo estado.', '../img/LogoEscrito.png', 'roupas', 55.00),
+('Saia Midi', 'Saia midi usada em bom estado.', '../img/LogoEscrito.png', 'roupas', 40.00),
+('Jaqueta Jeans', 'Jaqueta jeans usada em ótimo estado.', '../img/LogoEscrito.png', 'roupas', 80.00),
+('Top Cropped', 'Top cropped usado, bom estado.', '../img/LogoEscrito.png', 'roupas', 20.00),
+('Calça Legging', 'Calça legging nova.', '../img/LogoEscrito.png', 'roupas', 35.00),
+('Blazer Feminino', 'Blazer feminino em ótimo estado.', '../img/LogoEscrito.png', 'roupas', 70.00),
+('Regata Masculina', 'Regata masculina usada, bom estado.', '../img/LogoEscrito.png', 'roupas', 25.00),
+('Vestido Longo', 'Vestido longo usado, ótimo estado.', '../img/LogoEscrito.png', 'roupas', 65.00),
+('Bermuda Cargo', 'Bermuda cargo usada, bom estado.', '../img/LogoEscrito.png', 'roupas', 40.00),
+('Cropped Tricot', 'Cropped tricot novo.', '../img/LogoEscrito.png', 'roupas', 30.00),
+('Calça Social', 'Calça social usada, ótimo estado.', '../img/LogoEscrito.png', 'roupas', 50.00),
+('Moletom Básico', 'Moletom básico em bom estado.', '../img/LogoEscrito.png', 'roupas', 55.00),
+
+('Smartphone Samsung', 'Smartphone Samsung em ótimo estado.', '../img/LogoEscrito.png', 'eletronicos', 800.00),
+('Fone Bluetooth', 'Fone Bluetooth com boa qualidade de som.', '../img/LogoEscrito.png', 'eletronicos', 120.00),
+('Notebook Dell', 'Notebook Dell funcionando perfeitamente.', '../img/LogoEscrito.png', 'eletronicos', 2500.00),
+('Tablet iPad', 'Tablet iPad usado, ótimo estado.', '../img/LogoEscrito.png', 'eletronicos', 1800.00),
+('Smart TV 43"', 'Smart TV 43 polegadas em ótimo estado.', '../img/LogoEscrito.png', 'eletronicos', 1500.00),
+('Console PS5', 'Console PlayStation 5 com ótimo desempenho.', '../img/LogoEscrito.png', 'eletronicos', 3500.00),
+('Câmera Canon', 'Câmera Canon semi-profissional.', '../img/LogoEscrito.png', 'eletronicos', 2200.00),
+('Smartwatch', 'Smartwatch com várias funções de saúde.', '../img/LogoEscrito.png', 'eletronicos', 600.00),
+('Caixa de Som JBL', 'Caixa de som JBL potente.', '../img/LogoEscrito.png', 'eletronicos', 300.00),
+('Kindle E-reader', 'Leitor digital Kindle em bom estado.', '../img/LogoEscrito.png', 'eletronicos', 400.00),
+('Mouse Gamer', 'Mouse gamer ergonômico e rápido.', '../img/LogoEscrito.png', 'eletronicos', 150.00),
+('Teclado Mecânico', 'Teclado mecânico com iluminação RGB.', '../img/LogoEscrito.png', 'eletronicos', 250.00),
+('Monitor 24"', 'Monitor 24 polegadas Full HD.', '../img/LogoEscrito.png', 'eletronicos', 700.00),
+('Drone DJI', 'Drone DJI com câmera 4K.', '../img/LogoEscrito.png', 'eletronicos', 4500.00),
+('Carregador Portátil', 'Powerbank compacto e eficiente.', '../img/LogoEscrito.png', 'eletronicos', 90.00),
+('Webcam HD', 'Webcam HD com boa qualidade de imagem.', '../img/LogoEscrito.png', 'eletronicos', 200.00),
+('SSD 1TB', 'SSD de 1TB de alta velocidade.', '../img/LogoEscrito.png', 'eletronicos', 550.00),
+
+('Dom Casmurro', 'Livro Dom Casmurro de Machado de Assis.', '../img/LogoEscrito.png', 'livros', 25.00),
+('O Cortiço', 'Livro O Cortiço de Aluísio Azevedo.', '../img/LogoEscrito.png', 'livros', 30.00),
+('Harry Potter', 'Livro da saga Harry Potter.', '../img/LogoEscrito.png', 'livros', 60.00),
+('Senhor dos Anéis', 'Livro O Senhor dos Anéis de J.R.R. Tolkien.', '../img/LogoEscrito.png', 'livros', 90.00),
+('Código Limpo', 'Livro Código Limpo de Robert C. Martin.', '../img/LogoEscrito.png', 'livros', 85.00),
+('1984 - Orwell', 'Livro 1984 de George Orwell.', '../img/LogoEscrito.png', 'livros', 40.00),
+('O Alquimista', 'Livro O Alquimista de Paulo Coelho.', '../img/LogoEscrito.png', 'livros', 35.00),
+('Sapiens', 'Livro Sapiens de Yuval Harari.', '../img/LogoEscrito.png', 'livros', 70.00),
+('Mindset', 'Livro Mindset de Carol S. Dweck.', '../img/Logoprimeira imagem
+Roupas
+primeira imagemEscrito.png', 'livros', 50.00),
+('Atomic Habits', 'Livro Hábitos Atômicos de James Clear.', '../img/LogoEscrito.png', 'livros', 55.00),
+('Clean Architecture', 'Livro Clean Architecture de Robert C. Martin.', '../img/LogoEscrito.png', 'livros', 90.00),
+('O Pequeno Príncipe', 'Livro O Pequeno Príncipe de Antoine de Saint-Exupéry.', '../img/LogoEscrito.png', 'livros', 25.00),
+('Cem Anos de Solidão', 'Livro Cem Anos de Solidão de Gabriel García Márquez.', '../img/LogoEscrito.png', 'livros', 65.00),
+('A Revolução dos Bichos', 'Livro A Revolução dos Bichos de George Orwell.', '../img/LogoEscrito.png', 'livros', 35.00),
+('O Nome do Vento', 'Livro O Nome do Vento de Patrick Rothfuss.', '../img/LogoEscrito.png', 'livros', 80.00),
+('Neuromancer', 'Livro Neuromancer de William Gibson.', '../img/LogoEscrito.png', 'livros', 60.00);
+
+INSERT INTO Produtos (nome, descri, imagem, categoria, preco) VALUES
+('Tênis Nike Air Max', 'Tênis Nike Air Max em ótimo estado, confortável.', '../img/LogoEscrito.png', 'tenis', 300.00),
+('Tênis Adidas Superstar', 'Tênis Adidas clássico, usado mas em bom estado.', '../img/LogoEscrito.png', 'tenis', 250.00),
+('Tênis Puma Running', 'Tênis Puma para corrida, novo.', '../img/LogoEscrito.png', 'tenis', 280.00),
+('Tênis Converse All Star', 'Tênis Converse All Star em bom estado.', '../img/LogoEscrito.png', 'tenis', 200.00),
+('Tênis Vans Old Skool', 'Tênis Vans Old Skool semi-novo.', '../img/LogoEscrito.png', 'tenis', 220.00),
+('Tênis Mizuno Wave', 'Tênis Mizuno Wave para corrida, ótimo estado.', '../img/LogoEscrito.png', 'tenis', 350.00),
+('Tênis Asics Gel', 'Tênis Asics Gel novo, ótimo para corrida.', '../img/LogoEscrito.png', 'tenis', 330.00),
+('Tênis Reebok Classic', 'Tênis Reebok Classic usado, bom estado.', '../img/LogoEscrito.png', 'tenis', 240.00),
+('Tênis Fila Disruptor', 'Tênis Fila Disruptor semi-novo, estilo urbano.', '../img/LogoEscrito.png', 'tenis', 270.00),
+('Tênis New Balance 574', 'Tênis New Balance 574 novo, confortável.', '../img/LogoEscrito.png', 'tenis', 310.00);
+select*from Produtos

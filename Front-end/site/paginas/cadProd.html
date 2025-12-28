@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/cadProduto.css">
+    <title>Swapper | Cadastro de Produto</title>
+</head>
+<body style="background: #fff;">
+    <main>
+        <section id="hearder">
+            <a href="./index.html">
+                <img class="logo" src="../img/logo.png" alt="Logo"> 
+                <h1 class="cad">| Cadastrar Produto</h1>
+            </a>
+            <a href="#" class="ajuda" onclick="enviarMensagem()">Precisa de Ajuda?</a>
+        </section>
+
+        <section id="cadastrar">
+          <form id="produtoForm" enctype="multipart/form-data">
+                    <h1>Cadastrar Produto</h1>
+
+                    <!-- Upload de imagem -->
+                    <div class="forms image-upload-wrapper">
+                        <label>Imagem do Produto:</label>
+                        <div class="image-upload" id="imageUpload">
+                            <p>Clique ou arraste a imagem aqui</p>
+                            <input type="file" id="imagem" name="imagem" accept="image/*" required>
+                            <img id="preview" alt="Pré-visualização">
+                        </div>
+                    </div>
+
+                    <!-- Nome do Produto -->
+                    <div class="forms">
+                        <label for="nome">Nome do Produto:</label>
+                        <input type="text" class="nome" name="nome" placeholder="Ex: Camiseta Básica" required>
+                    </div>
+
+                    <!-- Descrição do Produto -->
+                    <div class="forms">
+                        <label for="descricao">Descrição do Produto:</label>
+                        <textarea class="descricao" name="descricao" placeholder="Descreva o produto..." rows="4" required></textarea>
+                    </div>
+
+                    <!-- Preço -->
+                    <div class="forms">
+                        <label for="preco">Preço:</label>
+                        <input type="number" class="preco" name="preco" placeholder="Ex: 50.00" step="0.01" required>
+                    </div>
+
+                    <!-- Categoria -->
+                    <div class="forms">
+                        <label for="categoria">Categoria:</label>
+                        <select class="categoria" name="categoria" required>
+                            <option value="">Selecione</option>
+                            <option value="roupas">Roupas</option>
+                            <option value="eletronicos">Eletrônicos</option>
+                            <option value="livros">Livros</option>
+                            <option value="tenis">Tênis</option>
+                        </select>
+                    </div>
+
+                    <!-- Tipo (checkbox) -->
+                    <div class="forms">
+                        <label>Tipo:</label>
+                        <div class="checkbox-group">
+                            <label for="venda">Venda</label>
+                            <input type="checkbox" name="tipo" value="venda" class="venda">
+
+                            <label for="troca">Troca</label>
+                            <input type="checkbox" name="tipo" value="troca" class="troca">
+                        </div>
+                    </div>
+
+                    <button type="submit" id="for">Cadastrar Produto</button>
+            </form>
+
+            <div class="cad-completo" id="cadastroCompleto"></div>
+        </section>
+    </main>
+
+    <div id="customAlertContainer"></div>
+    <script src="../js/cadProd.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/carrinho.css">
+    <link rel="stylesheet" href="../css/carrosel.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <!--Link para acessasr os incones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Swapper</title>
+</head>
+<body>
+    <section id="faixa">
+        <div id="faixas">
+              <p>EIII, NADA É DISPERDISADO!!!</p>
+        </div>
+    </section>
+    <header>
+        <div id="logo">
+            <img src="../img/LogoEscrito.png" alt="logo_pricipal">
+        </div>
+         <div class="barra">
+            <input type="text" id="searchInput" placeholder="Oque Vocçê procura?">
+            <button onclick="search()"><img src="../img/lupa.png" alt="lupa de pesquisa"></button>
+        </div>
+        <div id="menu">
+                 <div id="MenuCarrinho">
+                    <img src="../img/carrinho.png" alt="carrinho">
+                </div>
+                <div id="cartBox" class="hidden">
+                    <div id="cartItems"></div>
+                        <div class="cartFooter">
+                            <div>Total: R$ <span id="cartTotal">0.00</span></div>
+                                <div class="checkout">
+                                    <button id="clearBtn">Limpar</button>
+                                    <button id="checkoutBtn">Finalizar</button>
+                                </div>
+                        </div>
+                </div>
+            <nav>
+                <div class="menumobile">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="navlist">
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#" onclick="enviarMensagem()">Suporte</a></li>
+                    <li><a href="./login.html" id="loginLink">| Entrar</a></li>
+                    <li class="diferentes"><a href="./cadastrar.html" id="cadastroLink" class="diferente">Cadastrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="carrosel">
+            <div id="slider">
+                <div id="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="../img/carrinho.png" alt="imagem1">
+                    </div>
+                    <div class="slide ">
+                        <img src="../img/logo.png" alt="imagem2">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/lupa.png" alt="imagem3">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/LogoEscrito.png" alt="imagem4">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+        <section id="categoria">
+            <div class="categorias">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <h1>Categorias</h1>
+                <br>
+                <br>
+                <ul class="carousel">
+                    <li class="card" data-categoria="Todos">
+                        <div class="imagem">
+                            <a href=""><img src="../img/todos.png" alt="primeira imagem" draggable="false"></a>
+                        </div>
+                        <h2>Todos os Produtos</h2>
+                    </li>
+                    <li class="card">
+                        <div class="imagem">
+                            <a href="../paginas/cadProd.html"><img src="../img/prod.png" alt="primeira imagem" draggable="false"></a>
+                        </div>
+                        <h2>Cadastrar Produto</h2>
+                    </li>
+                   <li class="card" data-categoria="tenis">
+                        <div class="imagem">
+                            <a href=""><img src="../img/tenis.png" alt="primeira imagem" draggable="false"></a>
+                        </div>
+                        <h2>TENIS</h2>
+                    </li>
+
+                    <li class="card" data-categoria="livros">
+                        <div class="imagem">
+                            <a href=""><img src="../img/livros.png" alt="primeira imagem" draggable="false"></a>
+                        </div>
+                        <h2>Livros</h2>
+                    </li>
+
+                    <li class="card" data-categoria="roupas">
+                        <div class="imagem">
+                            <a href=""><img src="../img/roupas.png" alt="primeira imagem" draggable="false"></a>
+                        </div>
+                        <h2>Roupas</h2>
+                    </li>
+
+                    <li class="card" data-categoria="eletronicos">
+                        <div class="imagem">
+                            <a href=""><img src="../img/eletro.png" alt="primeira imagem" draggable="false"></a>
+                        </div>
+                        <h2>Eletronicos</h2>
+                    </li>
+
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+       <section id="produtos">
+            <div class="produtos">
+                <h1>Produtos</h1>
+
+                <div id="products" class="product"></div>
+
+                <div id="noResults" style="display:none; text-align:center; margin-top:20px;">
+                    Nenhum produto encontrado.
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="site">
+            <h2>Sobre Nos</h2>
+            <p class="Sobre">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nulla quod ex perspiciatis recusandae tenetur eius odit quo optio sapiente facere sunt, voluptatem minus ratione eligendi. Natus quos fuga dolorem?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id earum, nobis libero debitis fuga tempore qui omnis suscipit ut dignissimos nesciunt aut nemo itaque iste, dolorum ratione, ullam optio!
+            </p>
+            <img src="../img/LogoEscrito.png" alt="logo">
+            <p class="Direitos">&copy; Todos os Direitos Reservados</p>
+    
+        </div>      
+    </footer>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/carinho.js" defer></script>
+    <script src="../js/produto.js" defer></script>
+    <script src="../js/categoria.js" defer></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/menu.js"></script>
+    <div id="customAlertContainer"></div>
+</body>
+</html>
